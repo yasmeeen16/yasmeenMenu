@@ -8,20 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		124F9AA22393B45E00D1C09D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124F9AA12393B45E00D1C09D /* AppDelegate.swift */; };
-		124F9AA42393B45E00D1C09D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124F9AA32393B45E00D1C09D /* ViewController.swift */; };
 		124F9AA72393B45E00D1C09D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 124F9AA52393B45E00D1C09D /* Main.storyboard */; };
-		124F9AA92393B45F00D1C09D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 124F9AA82393B45F00D1C09D /* Assets.xcassets */; };
 		124F9AAC2393B45F00D1C09D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 124F9AAA2393B45F00D1C09D /* LaunchScreen.storyboard */; };
+		127F746D2394F55B009FDAE5 /* LoginVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127F746C2394F55B009FDAE5 /* LoginVCViewController.swift */; };
+		127F746F239502AB009FDAE5 /* AddVerificationCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127F746E239502AB009FDAE5 /* AddVerificationCode.swift */; };
+		127F7472239513FC009FDAE5 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127F7471239513FC009FDAE5 /* API.swift */; };
+		128350512396499D00370753 /* Registrationvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128350502396499D00370753 /* Registrationvc.swift */; };
+		128350532396540B00370753 /* FinalStepInRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128350522396540B00370753 /* FinalStepInRegistration.swift */; };
+		128350552396576A00370753 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128350542396576A00370753 /* UserData.swift */; };
+		1283505E2396626700370753 /* RegisterationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1283505D2396626700370753 /* RegisterationClient.swift */; };
+		1283506023966B0600370753 /* ChoseLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1283505F23966B0600370753 /* ChoseLocation.swift */; };
+		12CB799C23953B8300BB0DE5 /* SignUpFirstStepResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CB799B23953B8300BB0DE5 /* SignUpFirstStepResponse.swift */; };
+		12CB79AA23955F3700BB0DE5 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CB79A823955F3700BB0DE5 /* HomeCell.swift */; };
+		12CB79AB23955F3700BB0DE5 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12CB79A923955F3700BB0DE5 /* HomeCell.xib */; };
+		12CB79AF2395676800BB0DE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12CB79AE2395676800BB0DE5 /* Assets.xcassets */; };
+		330E0889906F4CB9A6AF369A /* Pods_MenuFoodDelevery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF96785E4E983F09CB06CE9 /* Pods_MenuFoodDelevery.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		124F9A9E2393B45E00D1C09D /* MenuFoodDelevery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuFoodDelevery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		124F9AA12393B45E00D1C09D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		124F9AA32393B45E00D1C09D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		124F9AA62393B45E00D1C09D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		124F9AA82393B45F00D1C09D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		124F9AAB2393B45F00D1C09D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		124F9AAD2393B45F00D1C09D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		127F746C2394F55B009FDAE5 /* LoginVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVCViewController.swift; sourceTree = "<group>"; };
+		127F746E239502AB009FDAE5 /* AddVerificationCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVerificationCode.swift; sourceTree = "<group>"; };
+		127F7471239513FC009FDAE5 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		128350502396499D00370753 /* Registrationvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registrationvc.swift; sourceTree = "<group>"; };
+		128350522396540B00370753 /* FinalStepInRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalStepInRegistration.swift; sourceTree = "<group>"; };
+		128350542396576A00370753 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		1283505D2396626700370753 /* RegisterationClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationClient.swift; sourceTree = "<group>"; };
+		1283505F23966B0600370753 /* ChoseLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoseLocation.swift; sourceTree = "<group>"; };
+		12CB799B23953B8300BB0DE5 /* SignUpFirstStepResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFirstStepResponse.swift; sourceTree = "<group>"; };
+		12CB79A823955F3700BB0DE5 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		12CB79A923955F3700BB0DE5 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		12CB79AE2395676800BB0DE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
+		1CF96785E4E983F09CB06CE9 /* Pods_MenuFoodDelevery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MenuFoodDelevery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A850862659DDD716FBB1C39A /* Pods-MenuFoodDelevery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuFoodDelevery.release.xcconfig"; path = "Pods/Target Support Files/Pods-MenuFoodDelevery/Pods-MenuFoodDelevery.release.xcconfig"; sourceTree = "<group>"; };
+		C5A7C20BE5DCB2930B6F2BBE /* Pods-MenuFoodDelevery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuFoodDelevery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MenuFoodDelevery/Pods-MenuFoodDelevery.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				330E0889906F4CB9A6AF369A /* Pods_MenuFoodDelevery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +65,8 @@
 			children = (
 				124F9AA02393B45E00D1C09D /* MenuFoodDelevery */,
 				124F9A9F2393B45E00D1C09D /* Products */,
+				F5C7C4CF5CC4240D9CE414A6 /* Pods */,
+				F9E6B133D9B81017F26189A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +81,97 @@
 		124F9AA02393B45E00D1C09D /* MenuFoodDelevery */ = {
 			isa = PBXGroup;
 			children = (
+				1283505A2396612100370753 /* Model */,
+				1283505923965FF700370753 /* Controller */,
+				127F747023951283009FDAE5 /* Network */,
+				124F9AB52393B4A800D1C09D /* View */,
 				124F9AA12393B45E00D1C09D /* AppDelegate.swift */,
-				124F9AA32393B45E00D1C09D /* ViewController.swift */,
-				124F9AA52393B45E00D1C09D /* Main.storyboard */,
-				124F9AA82393B45F00D1C09D /* Assets.xcassets */,
-				124F9AAA2393B45F00D1C09D /* LaunchScreen.storyboard */,
+				12CB79AE2395676800BB0DE5 /* Assets.xcassets */,
 				124F9AAD2393B45F00D1C09D /* Info.plist */,
 			);
 			path = MenuFoodDelevery;
+			sourceTree = "<group>";
+		};
+		124F9AB52393B4A800D1C09D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				124F9AA52393B45E00D1C09D /* Main.storyboard */,
+				124F9AAA2393B45F00D1C09D /* LaunchScreen.storyboard */,
+				12CB799F23955DEB00BB0DE5 /* cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		127F747023951283009FDAE5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				127F7471239513FC009FDAE5 /* API.swift */,
+				1283505D2396626700370753 /* RegisterationClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1283505923965FF700370753 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1283505C2396618200370753 /* Register */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1283505A2396612100370753 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1283505B2396613D00370753 /* Registration */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1283505B2396613D00370753 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				12CB799B23953B8300BB0DE5 /* SignUpFirstStepResponse.swift */,
+				128350542396576A00370753 /* UserData.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		1283505C2396618200370753 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				127F746C2394F55B009FDAE5 /* LoginVCViewController.swift */,
+				127F746E239502AB009FDAE5 /* AddVerificationCode.swift */,
+				128350502396499D00370753 /* Registrationvc.swift */,
+				128350522396540B00370753 /* FinalStepInRegistration.swift */,
+				1283505F23966B0600370753 /* ChoseLocation.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		12CB799F23955DEB00BB0DE5 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				12CB79A823955F3700BB0DE5 /* HomeCell.swift */,
+				12CB79A923955F3700BB0DE5 /* HomeCell.xib */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		F5C7C4CF5CC4240D9CE414A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5A7C20BE5DCB2930B6F2BBE /* Pods-MenuFoodDelevery.debug.xcconfig */,
+				A850862659DDD716FBB1C39A /* Pods-MenuFoodDelevery.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F9E6B133D9B81017F26189A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CF96785E4E983F09CB06CE9 /* Pods_MenuFoodDelevery.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 124F9AB02393B45F00D1C09D /* Build configuration list for PBXNativeTarget "MenuFoodDelevery" */;
 			buildPhases = (
+				7DB56D4490D7D093FA555C84 /* [CP] Check Pods Manifest.lock */,
 				124F9A9A2393B45E00D1C09D /* Sources */,
 				124F9A9B2393B45E00D1C09D /* Frameworks */,
 				124F9A9C2393B45E00D1C09D /* Resources */,
+				05CFA59C0942A014D15DA9CE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,20 +235,77 @@
 			buildActionMask = 2147483647;
 			files = (
 				124F9AAC2393B45F00D1C09D /* LaunchScreen.storyboard in Resources */,
-				124F9AA92393B45F00D1C09D /* Assets.xcassets in Resources */,
+				12CB79AB23955F3700BB0DE5 /* HomeCell.xib in Resources */,
 				124F9AA72393B45E00D1C09D /* Main.storyboard in Resources */,
+				12CB79AF2395676800BB0DE5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05CFA59C0942A014D15DA9CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MenuFoodDelevery/Pods-MenuFoodDelevery-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MenuFoodDelevery/Pods-MenuFoodDelevery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DB56D4490D7D093FA555C84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MenuFoodDelevery-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		124F9A9A2393B45E00D1C09D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				124F9AA42393B45E00D1C09D /* ViewController.swift in Sources */,
+				127F7472239513FC009FDAE5 /* API.swift in Sources */,
+				1283505E2396626700370753 /* RegisterationClient.swift in Sources */,
+				12CB79AA23955F3700BB0DE5 /* HomeCell.swift in Sources */,
+				128350512396499D00370753 /* Registrationvc.swift in Sources */,
 				124F9AA22393B45E00D1C09D /* AppDelegate.swift in Sources */,
+				128350552396576A00370753 /* UserData.swift in Sources */,
+				1283506023966B0600370753 /* ChoseLocation.swift in Sources */,
+				127F746D2394F55B009FDAE5 /* LoginVCViewController.swift in Sources */,
+				127F746F239502AB009FDAE5 /* AddVerificationCode.swift in Sources */,
+				128350532396540B00370753 /* FinalStepInRegistration.swift in Sources */,
+				12CB799C23953B8300BB0DE5 /* SignUpFirstStepResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,9 +449,11 @@
 		};
 		124F9AB12393B45F00D1C09D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5A7C20BE5DCB2930B6F2BBE /* Pods-MenuFoodDelevery.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZW7G48U232;
 				INFOPLIST_FILE = MenuFoodDelevery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,9 +468,11 @@
 		};
 		124F9AB22393B45F00D1C09D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A850862659DDD716FBB1C39A /* Pods-MenuFoodDelevery.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZW7G48U232;
 				INFOPLIST_FILE = MenuFoodDelevery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

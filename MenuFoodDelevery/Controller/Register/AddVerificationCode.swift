@@ -16,6 +16,7 @@ class AddVerificationCode: UIViewController,UITextFieldDelegate {
     private var timer: Timer!
     private var isTimerRunning: Bool!
     var userPhoneAndCode: SignUpFirstStepResponse!
+    
     @IBOutlet private weak var codeTF1: UITextField!
     @IBOutlet private weak var codeTF2: UITextField!
     @IBOutlet private weak var codeTF3: UITextField!
@@ -51,7 +52,13 @@ class AddVerificationCode: UIViewController,UITextFieldDelegate {
         codeTF4.addTarget(self, action: #selector(self.textFieldDidChange(textField:)), for: UIControl.Event.editingChanged)
         
     }
-  
+    
+    @IBAction func DesmissBtn(_ sender: Any) {
+        self.dismiss(animated: false) {
+            print(true)
+        }
+    }
+    
     @objc func textFieldDidChange(textField: UITextField){
         let text = textField.text
         if true{
@@ -136,11 +143,7 @@ class AddVerificationCode: UIViewController,UITextFieldDelegate {
         }
         print("code equal success ++++++++++++++++++++++++++")
         self.performSegue(withIdentifier: "sendVerficationCodeSeguey", sender: nil)
-        
-        //        let dvc = R.storyboard.auth.registerVC()!
-//        dvc.phone = phone ?? ""
-//        dvc.code = code ?? ""
-        //navigationController?.pushViewController(dvc, animated: true)
+
         
     }
 
