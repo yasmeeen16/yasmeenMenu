@@ -63,6 +63,9 @@ public class userDataResponse:Codable{
     let message: String?
     let result: UserDataResult?
     let token: String?
+    let errNum : Int?
+    let status : Bool?
+    
     
 }
 public class userDataResponseErrorMassage:Codable{

@@ -7,4 +7,5 @@ target 'MenuFoodDelevery' do
 
   # Pods for MenuFoodDelevery
 pod 'Alamofire'
+pod 'Cosmos'
 end

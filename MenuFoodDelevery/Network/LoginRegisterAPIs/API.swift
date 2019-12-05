@@ -10,16 +10,6 @@ import Foundation
 import Alamofire
 class API: NSObject {
    
-                private let body: String
-    
-                init(body: String) { self.body = body }
-    
-                    func encode(_ urlRequest: URLRequestConvertible, with parameters: Parameters?) throws -> URLRequest {
-                        guard var urlRequest = urlRequest.urlRequest else { throw Errors.emptyURLRequest }
-                        guard let data = body.data(using: .utf8) else { throw Errors.encodingProblem }
-                        urlRequest.httpBody = data
-                        return urlRequest
-                    }
     
     static func AddNewuser(Taken:String = "",Phone: String, completion: @escaping (_ error :Error?, _ success :Bool?,_ result:SignUpFirstStepResponse?) -> Void){
         
@@ -66,11 +56,5 @@ class API: NSObject {
     
 }
 
-extension API{
-    enum Errors: Error {
-        case emptyURLRequest
-        case encodingProblem
-    }
-}
 
 

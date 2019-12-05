@@ -1,28 +1,26 @@
 //
-//  RegisterationClient.swift
+//  LoginApi.swift
 //  MenuFoodDelevery
 //
-//  Created by Atiaf on 12/3/19.
+//  Created by Atiaf on 12/4/19.
 //  Copyright © 2019 Atiaf. All rights reserved.
 //
 
+
 import Foundation
 import Alamofire
-class RegisterationClient: NSObject {
+class LoginApi: NSObject {
     
-    static func AddNewuser(key:String = "1234567890",name:String ,Phone: String,email:String,password:String,device_reg_id:String,activation_code:String,lat:String,lag:String, completion: @escaping (_ error :Error?, _ success :Bool?,_ result:userDataResponse?) -> Void){
-        // let apiKey = "e64bfbcc0b2b336e875493e881b4ab9b"
+    static func loginuser(key:String = "1234567890",Phone: String,password:String,device_reg_id:String,lat:String,lag:String, completion: @escaping (_ error :Error?, _ success :Bool?,_ result:userDataResponse?) -> Void){
+        
         let baseAPIURL = "https://menuonedelivery.com/"
         
-        let url = "\(baseAPIURL)/api/second_step"
+        let url = "\(baseAPIURL)/api/login_customer"
         let parameters = [
             "key":key,
-            "name":name,
             "phone":Phone,
-            "email":email,
             "password":password,
             "device_reg_id":device_reg_id,
-            "activation_code":activation_code,
             "lat":lat,
             "lag":lag
         ]

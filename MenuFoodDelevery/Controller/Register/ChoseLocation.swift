@@ -30,7 +30,11 @@ class ChoseLocation: UIViewController {
     var email : String!
     var password : String!
     
-    
+    var street:String = ""
+    var country:String = ""
+    var city:String = ""
+    var locationName:String!
+    var ZiP:String!
     @IBOutlet weak var MapView: MKMapView!
     @IBOutlet weak var SearchForAddress: UITextField!
     @IBOutlet weak var ShowAddress: UILabel!
@@ -125,6 +129,8 @@ class ChoseLocation: UIViewController {
         self.latSelectedLocation = "\(coordinate.latitude)"
         self.longselectedLocation = "\(coordinate.longitude)"
         latLong(lat: coordinate.latitude, long: coordinate.longitude)
+        self.ShowAddress.text = "\(self.street) \(self.city) \(self.country)"
+        self.SearchForAddress.text = "\(self.street) \(self.city) \(self.country)"
         // Add annotation:
         let annotation = MKPointAnnotation()
         annotation.coordinate = coordinate
@@ -147,17 +153,23 @@ class ChoseLocation: UIViewController {
         RegisterationClient.AddNewuser(name: self.name!, Phone: self.phone!, email: self.email!, password: self.password!, device_reg_id: self.device_reg_id!, activation_code: self.activation_code!, lat: self.latSelectedLocation!, lag: self.longselectedLocation!) { (error, success, result) in
             if success!{
                 print("success")
-                print(result?.message!)
-                print(result?.result!)
-                print(result?.token!)
+//                print(result?.message!)
+//                print(result?.result!)
+//                print(result?.token!)
                 
             }else{
                 print("not succsess")
             }
         }
+        self.performSegue(withIdentifier: "thanksSeguey", sender: nil)
     }
     
-    
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let destinationvc = segue.destination as! FinalStepInRegistration
+
+    }
     
 }
 //setting up the location manager delegate.
@@ -218,9 +230,11 @@ extension ChoseLocation: CLLocationManagerDelegate{
             // Country
             if let country = placeMark!.addressDictionary!["Country"] as? String {
                 print("Country :- \(country)")
+                self.country = country
                 // City
                 if let city = placeMark.addressDictionary!["City"] as? String {
                     print("City :- \(city)")
+                    self.city = city
                     // State
                     if let state = placeMark.addressDictionary!["State"] as? String{
                         print("State :- \(state)")
@@ -231,10 +245,12 @@ extension ChoseLocation: CLLocationManagerDelegate{
                             let streetNumber = str.components(
                                 separatedBy: NSCharacterSet.decimalDigits.inverted).joined(separator: "")
                             print("streetNumber :- \(streetNumber)" as Any)
+                            self.street = street
                             
                             // ZIP
                             if let zip = placeMark.addressDictionary!["ZIP"] as? String{
                                 print("ZIP :- \(zip)")
+                                
                                 // Location name
                                 if let locationName = placeMark?.addressDictionary?["Name"] as? String {
                                     print("Location Name :- \(locationName)")

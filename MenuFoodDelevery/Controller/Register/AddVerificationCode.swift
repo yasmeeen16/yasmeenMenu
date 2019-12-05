@@ -16,7 +16,7 @@ class AddVerificationCode: UIViewController,UITextFieldDelegate {
     private var timer: Timer!
     private var isTimerRunning: Bool!
     var userPhoneAndCode: SignUpFirstStepResponse!
-    
+    var Validation = LoginVCViewController()
     @IBOutlet private weak var codeTF1: UITextField!
     @IBOutlet private weak var codeTF2: UITextField!
     @IBOutlet private weak var codeTF3: UITextField!
@@ -138,6 +138,8 @@ class AddVerificationCode: UIViewController,UITextFieldDelegate {
     
         guard verificationCode == self.userPhoneAndCode.result?.activation_code else {
             print("not equal ++++++++++++++++++++++++++++++++++")
+            
+          //  Validation.showToast(message: "  ادخل الرقم الصحيح")
             //displayAlert(withMessage: R.string.localizable.invalidCode())
             return
         }

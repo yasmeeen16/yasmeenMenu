@@ -9,22 +9,31 @@
 import UIKit
 
 class LoginFirstVisitor: UIViewController {
+    var phone:String!
+    var device_reg_id = "\(UIDevice.current.identifierForVendor?.uuidString ?? "")"
 
+    
+    @IBOutlet weak var PasswordTF: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func LoginBtn(_ sender: Any) {
+        LoginApi.loginuser(Phone: phone, password: PasswordTF.text ?? "", device_reg_id: device_reg_id, lat: "", lag: "") { (error, success, result) in
+            if (result?.token) != nil{
+                print("token: --------------->  \(result?.token ?? "")")
+            }else{
+                print("message ---------------> \(result?.message ?? "")")
+            }
+        }
     }
-    */
-
+    
+    @IBAction func DesmissBtn(_ sender: Any) {
+        self.dismiss(animated: false) {
+            print(true)
+        }
+    }
+    
 }
